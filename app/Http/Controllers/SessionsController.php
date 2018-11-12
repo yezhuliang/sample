@@ -50,4 +50,8 @@ class SessionsController extends Controller
             'only' => ['create']
         ]);
     }
+
+    public function aaaa(){
+        //
+    }
 }
