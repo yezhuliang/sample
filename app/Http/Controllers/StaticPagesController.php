@@ -1,4 +1,4 @@
- <?php
+<?php
 
 namespace App\Http\Controllers;
 
@@ -31,13 +31,5 @@ class StaticPagesController extends Controller
     public function about()
     {
         return view('static_pages/about');
-    }
-
-    public function destroy(Status $status)
-    {
-        $this->authorize('destroy', $status);
-        $status->delete();
-        session()->flash('success', '微博已被成功删除！');
-        return redirect()->back();
     }
 }
